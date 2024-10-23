@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ku">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیپان هاوس - تامی ناوازە</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <img src="assets/logo.jpeg" alt="سیپان هاوس">
+          <h1>سیپان هاوس</h1>
+        </div>
+        <div class="lang-toggle">
+          <i class="fas fa-globe"></i>
+          <span class="selected-lang">KU</span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Add this right after the <header> section -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#menu">مێنیو</a></li>
+        <li><a href="#about">دەربارە</a></li>
+        <li><a href="#contact">پەیوەندی</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section id="hero">
+        <div class="video-background">
+          <iframe src="https://www.youtube.com/embed/HS24PywYlxg?autoplay=1&mute=1&loop=1&playlist=HS24PywYlxg&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="hero-content" data-aos="fade-up">
+          <h2>خارنگەهـ و کافێیا سیپان هاوس</h2>
+          <p>تامی تایبەت، ئەزموونێکی بێ وێنە</p>
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 data-aos="fade-down">مێنیو</h2>
+        <div class="menu-filter" data-aos="fade-up">
+          <div class="filter-btn-container">
+            <button class="filter-btn active" data-filter="all">هەموو</button>
+            <button class="filter-btn" data-filter="food">خوارن</button>
+            <button class="filter-btn" data-filter="drinks">ڤەخوارن</button>
+            <button class="filter-btn" data-filter="desserts">شیرینی</button>
+            <div class="glow-line"></div>
+          </div>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item" data-category="food" data-aos="zoom-in">
+            <img src="assets/1.png" alt="تێشت">
+            <h3>تێشت</h3>
+          </div>
+          <div class="menu-item" data-category="food" data-aos="zoom-in">
+            <img src="assets/2.png" alt="بژارتی">
+            <h3>بژارتی</h3>
+          </div>
+          <div class="menu-item" data-category="food" data-aos="zoom-in">
+            <img src="assets/3.png" alt="خوارنێن شەرقی">
+            <h3>خوارنێن شەرقی</h3>
+          </div>
+          <div class="menu-item" data-category="food" data-aos="zoom-in">
+            <img src="assets/4.png" alt="خوارنێن غەربی">
+            <h3>خوارنێن غەربی</h3>
+          </div>
+          <div class="menu-item" data-category="food" data-aos="zoom-in">
+            <img src="assets/5.png" alt="پیتزا">
+            <h3>پیتزا</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" data-aos="fade-up">
+        <h2>دەربارەی ئێمە</h2>
+        <p>سیپان هاوس شوێنێکی تایبەتە بۆ خواردنی باش و کاتێکی خۆش. لێرە، ئێمە پێشکەشی خواردنی کوردی و نێودەوڵەتی دەکەین لەگەڵ ئەزموونێکی گەرم و میوانداری.</p>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h2>پەیوەندیمان پێوە بکە</h2>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt fa-bounce"></i></p>
+          <p><i class="fas fa-phone fa-shake"></i></p>
+          <p><i class="fas fa-envelope fa-beat"></i></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://wa.me/+9647507098669" target="_blank"><i class="fab fa-whatsapp fa-beat"></i></a>
+        <a href="https://instagram.com/kurdsoft" target="_blank"><i class="fab fa-instagram fa-flip"></i></a>
+        <a href="https://facebook.com/sipanhouse" target="_blank"><i class="fab fa-facebook fa-bounce"></i></a>
+      </div>
+      <p>&copy; 2023 سیپان هاوس. هەموو مافەکان پارێزراون.</p>
+    </footer>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+  </body>
+</html>
